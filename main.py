@@ -9,7 +9,7 @@ Descripcion: Programa para dibujar un cubo usando Turtle
 import turtle as t
 import time
  
-def DrawAngledLine(is_returning = True):
+def drawAngledLine(is_returning = True):
 	prev_angle = t.heading()
 	angle = prev_angle - 45
 	STEPS = 80
@@ -22,19 +22,19 @@ def DrawAngledLine(is_returning = True):
 	t.setheading(prev_angle)
 	
 
-def DrawCube(is_lined=True):
+def drawCube(is_lined=True):
 	t.setheading(0)
 	steps = 100
 	angle = 90
 	for _ in range(4):
 		if is_lined:
-			DrawAngledLine()
+			drawAngledLine()
 		t.right(angle)
 		t.fd(steps)
 
 
 if __name__ == "__main__":
-	DrawCube()
-	DrawAngledLine(is_returning=False)
-	DrawCube(is_lined=False)
+	drawCube()
+	drawAngledLine(is_returning=False)
+	drawCube(is_lined=False)
 	input("Detener?")
