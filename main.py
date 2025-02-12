@@ -1,3 +1,11 @@
+"""
+Autor: Eduardo Rivera Geffroy
+No. Control: 21760177
+Descripcion: Programa para dibujar un cubo usando Turtle
+"""
+
+# TODO: Crear linea usando t.dot
+
 import turtle as t
 import time
  
