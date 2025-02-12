@@ -37,4 +37,4 @@ if __name__ == "__main__":
 	drawCube()
 	drawAngledLine(is_returning=False)
 	drawCube(is_lined=False)
-	input("Detener?")
+	time.sleep(15)
