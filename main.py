@@ -7,7 +7,6 @@ Descripcion: Programa para dibujar un cubo usando Turtle
 # TODO: Crear linea usando t.dot
 
 import turtle as t
-import time
  
 def drawAngledLine(is_returning = True):
 	prev_angle = t.heading()
@@ -34,6 +33,8 @@ def drawCube(is_lined=True):
 
 
 if __name__ == "__main__":
+	import time
+	
 	drawCube()
 	drawAngledLine(is_returning=False)
 	drawCube(is_lined=False)
