@@ -52,11 +52,11 @@ def drawHandcraftedLine(pt1, pt2, size=1):
 if __name__ == "__main__":
 	import time
 
-	drawHandcraftedLine((0, 0), (2, 100), 3)
-	drawHandcraftedLine((50, 0), (100, 50), 3)
-	drawHandcraftedLine((-50, 0), (-100, 50), 3)
-	drawHandcraftedLine((50, 0), (100, -50), 3)
-	drawHandcraftedLine((-50, 0), (-100, -50), 3)
-	drawHandcraftedLine((0, 0), (-2, -100), 3)
+	drawHandcraftedLine((0, 0), (2, 100))
+	drawHandcraftedLine((50, 0), (100, 50))
+	drawHandcraftedLine((-50, 0), (-100, 50))
+	drawHandcraftedLine((50, 0), (100, -50))
+	drawHandcraftedLine((-50, 0), (-100, -50))
+	drawHandcraftedLine((0, 0), (-2, -100))
 
 	time.sleep(5)
