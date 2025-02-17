@@ -20,13 +20,13 @@ def _interpolate(i0,d0,i1,d1):
 	return values
 
 
-def drawPoint(x, y, size):
+def draw_point(x, y, size):
 	t.penup()
 	t.setpos(x, y)
 	t.dot(size=size)
 	
 
-def drawHandcraftedLine(pt1, pt2, size=1):
+def draw_handcrafted_line(pt1, pt2, size=1):
 	x1, y1 = pt1
 	x2, y2 = pt2
 
@@ -37,7 +37,7 @@ def drawHandcraftedLine(pt1, pt2, size=1):
 			
 		ys = _interpolate(x1, y1, x2, y2)
 		for x in range(x1, x2 + 1):   
-			drawPoint(x, ys[x - x1], size)
+			draw_point(x, ys[x - x1], size)
 
 	else:
 		#lineas verticales    
@@ -46,17 +46,17 @@ def drawHandcraftedLine(pt1, pt2, size=1):
 			
 		xs = _interpolate(y1, x1, y2, x2)
 		for y in range(y1, y2 + 1):
-			drawPoint(xs[y - y1], y, size)
+			draw_point(xs[y - y1], y, size)
 
 
 if __name__ == "__main__":
 	import time
 
-	drawHandcraftedLine((0, 0), (2, 100))
-	drawHandcraftedLine((50, 0), (100, 50))
-	drawHandcraftedLine((-50, 0), (-100, 50))
-	drawHandcraftedLine((50, 0), (100, -50))
-	drawHandcraftedLine((-50, 0), (-100, -50))
-	drawHandcraftedLine((0, 0), (-2, -100))
+	draw_handcrafted_line((0, 0), (2, 100))
+	draw_handcrafted_line((50, 0), (100, 50))
+	draw_handcrafted_line((-50, 0), (-100, 50))
+	draw_handcrafted_line((50, 0), (100, -50))
+	draw_handcrafted_line((-50, 0), (-100, -50))
+	draw_handcrafted_line((0, 0), (-2, -100))
 
 	time.sleep(5)
